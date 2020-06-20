@@ -33,29 +33,29 @@ foreach($arr as $a) {
 
 //5.strip_tags
 $sink = "<h1>ぱいそん</h1>";
-echo strip_tags($sink) . "\n";
+    echo strip_tags($sink) . "\n";
 
 //5.array_push
 $sink = array("P","y","t","h","o",);
 array_push($sink, "n");
-print_r($sink) . "\n";
+    print_r($sink) . "\n";
 
 //5.array_merge
 $take = array("coffee" => "250","milk" => "100");
 $take_more = array("milk" => "150", "sugar" =>"50");
 $result = array_merge($take,$take_more);
-print_r($result);
+    print_r($result);
 
 //5.time
 $doko = time();
 $now = time();
-print $now . "\n";
+    print $now . "\n";
 
 //5.mktime
 $stamptime = mktime(0, 0, 0, 20, 6, 2020);
-print $stamptime  . "\n";
+    print $stamptime  . "\n";
 
 //5.date
 date_default_timezone_set('Asia/Tokyo');
-echo date("Y/m/d") . "\n";
+    echo date("Y/m/d") . "\n";
 ?>    
