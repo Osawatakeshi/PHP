@@ -1,16 +1,10 @@
 <?php
 //1.
-function one($max) {
-    $result = $max * 2 ."\n";
-    return $result;
-}
+function one($max) { $result = $max * 2 ."\n"; return $result; }
     echo one(3);
 
 //2.
-function f($a, $b) {
-    $result = $a + $b ."\n";
-    return $result;
-}
+function f($a, $b) { $result = $a + $b ."\n"; return $result; }
     echo f(1,8);
 
 //3.
@@ -23,9 +17,7 @@ $arr = array(2, 6, 15, 8, 7);
 function max_array($arr) {
     $result = 0;
 foreach($arr as $a) {
-    if($result < $a) {
-    $result = $a;
- }
+    if($result < $a) { $result = $a; }
 }
     return $result;
 }
