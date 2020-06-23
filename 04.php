@@ -9,16 +9,28 @@ function f($a, $b) { $result = $a + $b ."\n"; return $result; }
 
 //3.
 $arr = array(1, 3, 5 ,7, 9);
-    $result = array_product($arr);
-    var_dump( $result ) ."\n";
+function fone($arr)
+{
+    $result = 1;
+    foreach($arr as $a) {
+        $result *=  $a;
+    }
+    
+    return $result; 
+}
+    echo fone($arr) . "\n";
 
 //4.
 $arr = array(2, 6, 15, 8, 7);
-function max_array($arr) {
+function max_array($arr)
+{
     $result = 0;
-foreach($arr as $a) {
-    if($result < $a) { $result = $a; }
-}
+    foreach($arr as $a) {
+        if($result < $a) {
+            $result = $a;
+        }
+    }
+    
     return $result;
 }
     echo max_array($arr) . "\n";
